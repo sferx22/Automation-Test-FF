@@ -1,0 +1,14 @@
+pojo/SearchData.class
+pageobjects/MenuSuperior.class
+pageobjects/RegisterAccountPages.class
+utils/SeleniumUtils.class
+utils/DataUtils.class
+pageobjects/SearchResultsPage.class
+pageobjects/BasePage.class
+pageobjects/CartPage.class
+utils/ApiUtils.class
+pageobjects/HeaderPage.class
+pageobjects/HomePage.class
+pageobjects/LoginPage.class
+pojo/RegisterAccount.class
+pageobjects/ProductPage.class

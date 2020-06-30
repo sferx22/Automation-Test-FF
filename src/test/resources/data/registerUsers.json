@@ -1,0 +1,12 @@
+{
+  "dataSet": [
+    {
+      "firstName": "Fernanda",
+      "lastName": "Fernandez",
+      "telephone": "8888-8888",
+      "password": "Asdqwe123",
+      "passwordConfirm": "Asdqwe123",
+      "shouldSubscribe": true
+    }
+  ]
+}

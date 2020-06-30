@@ -1,0 +1,11 @@
+dataproviders/RegisterProvider$1.class
+selenium/PageObjectHandler.class
+selenium/BaseClass.class
+selenium/TestWithData.class
+selenium/RegisterTests.class
+selenium/AddToCartTests.class
+dataproviders/SearchProvider.class
+selenium/SearchTests.class
+selenium/demo/DemoAccount.class
+dataproviders/SearchProvider$1.class
+dataproviders/RegisterProvider.class

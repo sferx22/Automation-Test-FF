@@ -1,0 +1,18 @@
+{
+  "dataSet": [
+    {
+      "firstName": "Fernanda",
+      "email": "holfsdfa@hola.com",
+      "password": "hola",
+      "passwordConfirm": "hola",
+      "shouldSubscribe": true
+    },
+    {
+      "firstName": "Fernanda",
+      "email": "fernanda@hola.com",
+      "password": "holis",
+      "passwordConfirm": "holis",
+      "shouldSubscribe": false
+    }
+  ]
+}
