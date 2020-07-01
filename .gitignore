@@ -1,6 +1,4 @@
 #IDE's
-.ideaDataSources/
-.idea
 .DS_Store
 *.iml
 *.ipr
@@ -10,3 +8,4 @@
 *.imscc
 logs
 target
+.idea

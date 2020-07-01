@@ -10,6 +10,18 @@ public class SearchResultsPage extends BasePage{
 
     private By resultThumbs = By.cssSelector(".product-thumb");
 
+    private By addtoCart = By.cssSelector("div.button-group > button:nth-child(1) > span");
+
+    private By totalshoppingCart = By.id("cart-total");
+
+    public void clickAddtoCart() {
+        driver.findElement(addtoCart).click();
+    }
+
+    public void clickTotalShoppigCart() {
+        driver.findElement(totalshoppingCart).click();
+    }
+
     public SearchResultsPage(WebDriver _driver){
         super(_driver);
     }
@@ -22,6 +34,7 @@ public class SearchResultsPage extends BasePage{
         WebElement contentElement = driver.findElement(By.id("content"));
         return contentElement.getAttribute("innerHTML").contains(ERROR_WHEN_THERE_IS_NO_RESULTS);
     }
+
 
 
 }

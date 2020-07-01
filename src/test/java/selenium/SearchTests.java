@@ -23,6 +23,16 @@ public class SearchTests extends BaseClass {
         else
             Assert.assertTrue(searchResultsPage().isNoResultsVisible(), "Error message was not displayed");
 
+        searchResultsPage().clickAddtoCart();
+
+        searchResultsPage().clickTotalShoppigCart();
+
+
+
+
+
+
+
 
     }
 }
