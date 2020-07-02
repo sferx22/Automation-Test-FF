@@ -25,14 +25,15 @@ public class SearchTests extends BaseClass {
 
         searchResultsPage().clickAddtoCart();
 
+        Assert.assertTrue(searchResultsPage().isSuccessAlertAddtoCard("Success"));
+
         searchResultsPage().clickTotalShoppigCart();
 
+        Assert.assertTrue(searchResultsPage().isVisibleTotalCart());
 
+        searchResultsPage().clickCheckouttoCart();
 
-
-
-
-
+        Assert.assertTrue(searchResultsPage().isSuccessCheckOut());
 
     }
 }
