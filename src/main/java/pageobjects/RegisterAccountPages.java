@@ -27,6 +27,14 @@ public class RegisterAccountPages extends BasePage{
 
     private By subcriberadio = By.cssSelector("div.col-sm-10 > label:nth-child(1) > input[type=radio]");
 
+    public By getAgreePrivacyPolicyCheckbox() {
+        return agreePrivacyPolicyCheckbox;
+    }
+
+    public By getSubmitButtonContinue() {
+        return submitButtonContinue;
+    }
+
     private By agreePrivacyPolicyCheckbox = By.xpath("//*[@class='pull-right']/input[@type='checkbox']");
 
     private By submitButtonContinue = By.cssSelector("div.buttons > div.pull-right > input.btn.btn-primary");

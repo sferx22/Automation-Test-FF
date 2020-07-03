@@ -3,7 +3,6 @@ package pageobjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 
 public class SearchResultsPage extends BasePage{
 
@@ -17,23 +16,30 @@ public class SearchResultsPage extends BasePage{
 
     private By totalshoppingCart = By.xpath("//*[@id='cart']/button");
 
-    private By checkoutlink = By.cssSelector("#cart > ul > li:nth-child(2) > div > p > a:nth-child(2)");
+    public By getAddtoCart() {
+        return addtoCart;
+    }
 
-    private By alertCheckOut = By.cssSelector("#checkout-cart > div.alert.alert-danger.alert-dismissible");
+    public By getAlertSuccessAddtoCart() {
+        return alertSuccessAddtoCart;
+    }
+
+    public By getTotalshoppingCart() {
+        return totalshoppingCart;
+    }
+
+    public By getCheckoutlink() {
+        return checkoutlink;
+    }
+
+    private By checkoutlink = By.xpath("//p[@class='text-right']//a[contains(., 'Checkout')]");
+
+    private By alertCheckOut = By.cssSelector("div.alert.alert-danger.alert-dismissible");
 
     public void clickAddtoCart()
     {
         driver.findElement(addtoCart).click();
     }
-
-    public void clickTotalShoppigCart() {
-        driver.findElement(totalshoppingCart).click();
-    }
-
-    public void clickCheckouttoCart() {
-        driver.findElement(checkoutlink).click();
-    }
-
 
     public SearchResultsPage(WebDriver _driver){
         super(_driver);
@@ -62,11 +68,6 @@ public class SearchResultsPage extends BasePage{
     public Boolean isSuccessCheckOut(){
         return driver.findElement(alertCheckOut)
                 .getText()
-                .contains("Products marked with *** are not available in the desired quantity or not in stock!");
+                .contains("Products marked with *** are not available");
     }
-
-
-
-
-
 }

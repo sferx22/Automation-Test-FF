@@ -3,9 +3,24 @@
 
 <suite name="Account related Suite">
     <parameter name="browser" value="chrome"></parameter>
-    <test name="Register new account - Test 1">
+    <test name="Casos de Prueba 1">
         <classes>
             <class name="selenium.RegisterTests">
+            </class>
+        </classes>
+    </test>
+    <test name="Casos de Prueba 2">
+        <classes>
+            <class name="selenium.SearchTests">
+            </class>
+        </classes>
+    </test>
+    <test name="Casos de Prueba 3">
+        <classes>
+            <class name="selenium.AddToCartTests">
+                <methods>
+                    <include name="testVerifyPrices"></include>
+                </methods>
             </class>
         </classes>
     </test>
