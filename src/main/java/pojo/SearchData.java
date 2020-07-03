@@ -10,14 +10,6 @@ public class SearchData {
         this.expectedResults = expectedResults;
     }
 
-    public void setSearchCriteria(String searchCriteria) {
-        this.searchCriteria = searchCriteria;
-    }
-
-    public void setExpectedResults(int expectedResults){
-        this.expectedResults = expectedResults;
-    }
-
     public String getSearchCriteria(){
         return searchCriteria;
     };

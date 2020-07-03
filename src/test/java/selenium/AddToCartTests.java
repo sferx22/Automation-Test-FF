@@ -13,11 +13,11 @@ public class AddToCartTests extends BaseClass {
 
     @Description("Verify that add to cart works fine")
     @Test(description = "Add to Cart Test")
-    public void Test_Add_To_Cart_Successful(){
+    public void testAddToCartSuccessful(){
 
          int testAmount = 2;
 
-         String testProduct = homePage().selectFirstProductAndGetName(); // homePage().selectProductByName(testProduct);
+         String testProduct = homePage().selectFirstProductAndGetName();
 
          productPage().setAmountToAdd(testAmount);
          productPage().clickAddToCart();

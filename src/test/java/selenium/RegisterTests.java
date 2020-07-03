@@ -17,10 +17,8 @@ public class RegisterTests extends BaseClass {
 
         WebDriverWait wait = new WebDriverWait(driver, 10);
 
-        // go to login page
         headerPage().goToRegister();
 
-        // enter information
         registerAccountPages().registerUser(registerAccount.getFirstName(), registerAccount.getLastName(),registerAccount.getTelephone(), registerAccount.getPassword(), registerAccount.getPasswordConfirm());
 
         wait.until(ExpectedConditions.elementToBeClickable(registerAccountPages().getAgreePrivacyPolicyCheckbox()));
