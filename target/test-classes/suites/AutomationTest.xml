@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Account related Suite">
+<suite name="Automation Test">
     <parameter name="browser" value="chrome"></parameter>
     <test name="Casos de Prueba 1">
         <classes>

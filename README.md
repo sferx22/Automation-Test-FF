@@ -1,3 +1,7 @@
 # Pasos para ejecutar el examen
 
-https://www.loom.com/share/0b1b1e2ffd0141fdb1a9e2ea39e71fd5
+1. Ejecutar el TestSuite de AutomationTest.xml
+
+https://www.loom.com/share/6452fa6602e64ab595237dbb8afdf5a9
+
+
